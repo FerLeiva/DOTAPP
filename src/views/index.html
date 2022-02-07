@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>DOTAPP</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval' 'unsafe-inline';"  />
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bienvenido a DOTAPP</a>
+        </div>
+      </nav>
+
+      <div style="padding: 15px;">
+      <h2 style="text-align: center;">Convertidor de datos a Excell</h2>
+    </div>
+      <div class=" gap-4" style="text-align: center;padding: 5px">
+        <button type='submit' onclick="start()" id='scrapper' class="btn btn-primary">Obtener Data</button>
+        </div>
+      <footer style="text-align: center; padding: 19px;">
+        <p>Creado por @effeleiva, todos los derechos reservados. Ultima versión: ENERO 2022</p>
+      </footer>
+
+    <!-- Logic -->
+    <script src="../scripts/app.js"> 
+    $("#scrapper").bind("click", start);
+    </script>
+  </body>
+</html>
